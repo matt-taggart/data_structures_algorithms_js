@@ -11,5 +11,5 @@ Array.matrix = function(rows, cols, initial) {
   return arr;
 }
 
-let arr = Array.matrix(5, 5, 0);
+const arr = Array.matrix(5, 5, 0);
 console.log(arr);
