@@ -19,7 +19,7 @@ Stack.prototype.length = function length() {
 };
 
 Stack.prototype.clear = function clear() {
-  return this.dataStore = [];
+  this.dataStore = [];
 };
 
 function isPalindrome(word) {
