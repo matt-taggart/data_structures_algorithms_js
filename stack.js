@@ -23,7 +23,7 @@ Stack.prototype.clear = function clear() {
 };
 
 function isPalindrome(word) {
-  let w = new Stack();
+  const w = new Stack();
   let reverseWord = '';
   for (let i = 0; i < word.length; i++) {
     w.push(word[i]);
@@ -36,3 +36,17 @@ function isPalindrome(word) {
 
 isPalindrome('monkey'); //false
 isPalindrome('racecar'); //true
+
+function factorial(n) {
+  const s = new Stack();
+  while (n > 1) {
+    s.push(n--);
+  }
+  let product = 1;
+  while (s.length() > 0) {
+    product *= s.pop();
+  }
+  return product;
+}
+
+console.log(factorial(5));
