@@ -14,6 +14,7 @@ LinkedList.prototype.find = function find(item) {
   }
   return currentNode;
 };
+
 LinkedList.prototype.findPrevious = function findPrevious(item) {
   let currentNode = this.head;
   while (currentNode.next !== null && currentNode.next.element !== item) {
@@ -21,6 +22,7 @@ LinkedList.prototype.findPrevious = function findPrevious(item) {
   }
   return currentNode;
 };
+
 LinkedList.prototype.insert = function insert(newElement, item) {
   const newNode = new Node(newElement);
   let current = this.find(item);
@@ -33,6 +35,7 @@ LinkedList.prototype.remove = function remove(item) {
     prevNode.next = prevNode.next.next;
   }
 };
+
 LinkedList.prototype.display = function display() {
   let currentNode = this.head;
   while(currentNode.next !== null) {
